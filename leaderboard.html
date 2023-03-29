@@ -4,27 +4,30 @@ table {
   font-family: Arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  margin: auto;
 }
 
-th, td {
+thead th {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
   text-align: left;
-  padding: 8px;
 }
 
-th {
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-tr:hover {
+tbody tr:hover {
   background-color: #ddd;
 }
 
+td, th {
+  padding: 12px;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
 </style>
 <table border="1" class="dataframe">
   <thead>
